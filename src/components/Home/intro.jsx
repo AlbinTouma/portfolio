@@ -1,8 +1,7 @@
 "use client"
-import TextLoader from '../shared/TextLoader';
+import TextLoader from '../Shared/TextLoader';
 import React, { useEffect, useState } from 'react';
-import remark from 'remark'
-import html from 'remark-html'
+
 
 const Intro = () => {
     const [content, setContent] = useState('');
@@ -17,7 +16,7 @@ const Intro = () => {
     }, []);
 
     return (
-        <div className='mx-auto max-w-[769px] mt-11'>
+        <div className='mx-auto p-2 sm:p-1 md:p-0 max-w-[769px] mt-11'>
             <TextLoader content={content} />
         </div>
     );

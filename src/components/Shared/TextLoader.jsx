@@ -7,7 +7,7 @@ import Markdown from 'react-markdown';
 const TextLoader = ({ content }) => {
     return (
         <>
-            <ReactMarkdown className='markdown prose-h1:text-4xl prose-h1:text-emerald-900'>
+            <ReactMarkdown className='markdown prose-h1:text-4xl prose-p:text-2xl prose-h1:text-emerald-900'>
                 {content}
             </ReactMarkdown>
 

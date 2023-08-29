@@ -1,12 +1,11 @@
-# Lorem Ipsum
+# There's a tsunami of data
 
 Did you know that 90% of the world's data was generated in the last two years?
 
+Knowing how to ride this tsunami of data is the difference between success and failure.
+I'm here to help you succeed and find data driven solutions to your problems. 
 
-ALBIN
 
+## Steps to success
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies 
-leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus 
-
-pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+As an analyst with two years working under the hood of compliance I know what you need.
