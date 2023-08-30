@@ -4,6 +4,7 @@ import NavBar from '../Shared/NavBar';
 import HeroBanner from './hero';
 import Intro from './intro';
 import Services from './services';
+import Calendly from './contactMe';
 
 export default function Home() {
 
@@ -12,7 +13,8 @@ export default function Home() {
             <NavBar />
             <HeroBanner />
             <Intro />
-            <Services/>
+            <Services />
+            <Calendly />
 
 
         </>
