@@ -1,7 +1,9 @@
 ---
 title: 'Automate spreadsheet with Python'
-date: '2022-02-02'
 subtitle: 'My First blog of 2022'
+explanation: 'Python automation'
+image: '/assets/python_code.jpg'
+date: '2022-02-02'
 ---
 * The main content
 # One morning, when Gregor Samsa woke from troubled dreams.

@@ -14,7 +14,9 @@ const getPostMetaData = (): PostMetaData[] => {
         const matterResult = matter(fileContents)
         return {
             title: matterResult.data.title,
+            explanation: matterResult.data.explanation,
             date: matterResult.data.date,
+            image: matterResult.data.image,
             subtitle: matterResult.data.subtitle,
             slug: fileName.replace('md', ""),
         }

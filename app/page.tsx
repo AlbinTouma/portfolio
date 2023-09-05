@@ -3,7 +3,7 @@ import { Nabla } from "next/font/google";
 import Home from '../src/components/Home/index.js';
 import BlogPreview from "../src/components/Blog/frontcard";
 import getPostMetaData from '../src/components/Blog/getPostMetadata';
-
+import Calendly from '../src/components/Home/contactMe.jsx';
 
 export default function HomePage() {
   const PostMetaData = getPostMetaData();
@@ -11,6 +11,7 @@ export default function HomePage() {
     <>
       <Home />
       <BlogPreview />
+      <Calendly />
     </>
   );
 }

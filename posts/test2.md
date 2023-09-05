@@ -1,7 +1,9 @@
 ---
-title: 'My Second Blog of 2022'
-date: '2022-02-02'
+title: 'Know Your Sanctions - how to build an anti-money laundering screening platform'
 subtitle: 'My First blog of 2022'
+explanation: 'How I built my own sanctions screening platform'
+image: '/assets/IranianSanctions.jpg'
+date: '2022-02-02'
 ---
 
 # The main content
