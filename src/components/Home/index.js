@@ -4,7 +4,7 @@ import NavBar from '../Shared/NavBar';
 import HeroBanner from './hero';
 import Intro from './intro';
 import Services from './services';
-import WorkedWith from '../Blog/workedWith';
+import WorkedWith from './workedWith';
 
 
 export default function Home(props) {

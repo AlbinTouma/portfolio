@@ -6,7 +6,7 @@ const dictionary = {
             '- Map and transform your datasets',
             '- Clean and organise your data',
             '- Analysis that uncovers hidden insights',],
-    'Under the hood of anti-money laundering': ['- Find a corporate structure that suits your business needs', '- Understand PEP, sanctions and corporate data'],
+    'Under the hood of anti-money laundering': ['- Regulatory research', '- Understand PEP, sanctions and corporate data'],
 }
 
 export function ServiceCard(props) {
@@ -34,7 +34,7 @@ export default function Services() {
 
 
 
-        <ul className="flex mb-11 gap-4 flex-col p-3 sm:p-2 sm:flex-row mx-auto max-w-[768px]">
+        <ul className="flex mb-11 gap-4 flex-col p-3  mx-auto max-w-[768px]">
 
             <ServiceCard
                 icon={<FaCheckCircle />}
@@ -43,7 +43,7 @@ export default function Services() {
             />
 
             <ServiceCard
-                title='Under the hood of anti-money laundering'
+                title='AML Subject Matter Expertise'
                 icon={<FaCheckCircle />}
                 checklist={dictionary['Under the hood of anti-money laundering']}
             />
