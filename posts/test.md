@@ -6,9 +6,9 @@ image: '/assets/python_code.jpg'
 date: '2022-02-02'
 ---
 
-# Problem.
+# Business Problem.
 
-As an analyst at Comply Advantage, I would recieve monthly excel sheets from our data vendor that describe their data coverage.
+As an analyst I recieved monthly excel sheets from our data vendor that describe their data coverage.
 
 It was my job to analyse changes in their coverage. It took at least a day to do and worse, I was the only one who knew how.
 
@@ -22,14 +22,19 @@ A good definition of done is crucial to any project, so I jotted down:
 
 >"..the user should load the file, run the programme, and then see a heatmap of our vendor's coverage and a list of changes in coverage compared to last month's file."
 
-Thinking of the user gave me my definition of done and in this case it was when the programme:
+Thinking about the user gave me my definition of done and in this case it was when the programme:
 
 > 1) Scores the input coverage sheet and saves the output as a heatmap
 
 > 2) Compares the output file to the previous month's heatmap and logs any differences
 
 
+```py
 
+print('hello world')
+
+
+```
 
 
 

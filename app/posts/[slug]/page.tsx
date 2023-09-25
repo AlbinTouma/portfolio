@@ -5,6 +5,9 @@ import getPostMetaData from '@/src/components/Blog/getPostMetadata';
 import { Image } from 'next/dist/client/image-component';
 import NavBar from '@/src/components/Shared/NavBar';
 import { FaArrowLeft } from 'react-icons/fa'
+import ReactMarkdown from 'react-markdown';
+
+
 
 const getPostContent = (slug: string) => {
     const folder = 'posts/'
@@ -13,6 +16,7 @@ const getPostContent = (slug: string) => {
     const matterResult = matter(content);
     return matterResult
 }
+
 
 export const generatedStaticParams = async () => {
     const posts = getPostMetaData()
@@ -37,8 +41,15 @@ const BlogPage = (props: any) => {
             </header>
             <section className='max-w-[768px] mx-auto'>
                 <h1 className='text-5xl mb-11 text-emerald-900'>{post.data.title}</h1>
-                <Image src={post.data.image} width={768} height={500} alt='blog cover' />
-                <Markdown className='markdown prose-h1:text-4xl prose-p:text-2xl prose-p:text-gray-600 prose-h1:text-emerald-900'>{post.content}</Markdown>
+                <Image src={post.data.image} width={768} height={500} alt='blog cover' className='mb-11' />
+                <article className='prose'>
+                    <ReactMarkdown>
+
+                        {post.content}
+
+                    </ReactMarkdown>
+                </article>
+
             </section>
         </>
     )
@@ -48,3 +59,4 @@ const BlogPage = (props: any) => {
 
 }
 export default BlogPage
+
