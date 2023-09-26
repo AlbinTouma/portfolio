@@ -42,8 +42,8 @@ const BlogPage = (props: any) => {
             <section className='max-w-[768px] mx-auto'>
                 <h1 className='text-5xl mb-11 text-emerald-900'>{post.data.title}</h1>
                 <Image src={post.data.image} width={768} height={500} alt='blog cover' className='mb-11' />
-                <article className='prose'>
-                    <ReactMarkdown className='mb-[150px]'>
+                <article className='m-4 prose'>
+                    <ReactMarkdown className='mb-[200px]'>
 
                         {post.content}
 
@@ -51,6 +51,8 @@ const BlogPage = (props: any) => {
                 </article>
 
             </section>
+
+
         </>
     )
 

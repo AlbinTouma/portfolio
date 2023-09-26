@@ -19,8 +19,8 @@ export default function BlogPreview() {
     return (
         <>
             <section className='bg-blue-50 mb-[200px] mt-[200px] p-11'>
-                <div className='mx-auto max-w-screen-xl'>
-                    <h1 className='text-6xl font-semibold mb-11 max-w-[900px] text-emerald-900'>From business problem to insightful solution</h1>
+                <div className='mx-auto max-w-screen-xl '>
+                    <h1 className='text-4xl sm:text-6xl font-semibold mb-11 max-w-[900px] text-emerald-900'>From business problem to insightful solution</h1>
                     <div className='flex flex-row gap-4 flex-wrap'>{postPreviews}</div>
                 </div>
             </section>
