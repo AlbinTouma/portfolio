@@ -1,7 +1,7 @@
 ---
 title: 'Automate Excel with Python'
 subtitle: 'My First blog of 2022'
-explanation: 'How I wrote a python programme that brought a day of data cleaning in excel down to the click of a button'
+explanation: 'Knowing about new data before that first coffee with a client can mean the difference between a deal and no deal. With Python, I reduced the time to update sales from a day to less than the time it takes them to finish their coffee. '
 image: '/assets/python_code.jpg'
 date: '2023-09-26'
 ---
@@ -307,6 +307,6 @@ To stay organised, we'll save each change_log with today's date appended to the 
 
 ## From business problem to solution
 
+I  said earlier that  'knowing about updates in our data before that morning coffee with a potential client can be the difference between deal and no deal'. 
 
-
-
+With this Python programme, I can now update our sales team about changes in our data in less than the time it takes them to finish their coffee. 
