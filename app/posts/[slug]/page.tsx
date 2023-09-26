@@ -43,7 +43,7 @@ const BlogPage = (props: any) => {
                 <h1 className='text-5xl mb-11 text-emerald-900'>{post.data.title}</h1>
                 <Image src={post.data.image} width={768} height={500} alt='blog cover' className='mb-11' />
                 <article className='prose'>
-                    <ReactMarkdown>
+                    <ReactMarkdown className='mb-[150px]'>
 
                         {post.content}
 
