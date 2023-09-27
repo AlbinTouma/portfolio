@@ -1,7 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter'
 import getPostMetaData from '@/src/components/Blog/getPostMetadata';
-import { Image } from 'next/dist/client/image-component';
 import { FaArrowLeft } from 'react-icons/fa'
 import ReactMarkdown from 'react-markdown';
 
@@ -41,7 +40,7 @@ const BlogPage = (props: any) => {
             <section className='max-w-[768px] mx-auto'>
 
                 <h1 className='text-5xl mb-11 text-emerald-900'>{post.data.title}</h1>
-                <Image src={post.data.image} width={768} height={500} alt='blog cover' className='mb-11' />
+                <img src={post.data.image} width={768} height={500} alt='blog cover' className='mb-11' />
                 <article className='m-4 prose'>
                     <ReactMarkdown className='mb-[200px]'>
 
