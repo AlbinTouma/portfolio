@@ -1,31 +1,20 @@
 import Link from 'next/link';
 import getPostMetaData from './getPostMetadata';
 import { Image } from 'next/dist/client/image-component';
+import { PostMetaData } from './models';
 
-export default function BlogPreview() {
-    const postMetaData = getPostMetaData();
-    const postPreviews = postMetaData.map((post) => (
+const BlogPreview = (props: PostMetaData) => {
+    return (
 
-        <div className='m-4 pl-3 pr-4 pb-1 w-[600px]'>
-            <Link href={`/posts/${post.slug}`} >
-                <Image className='items-center mb-4 rounded-xl aspect-w-16 aspect-h-9' src={post.image} width={500} height={300} alt='test' />
-                <h2 className='text-2xl'>{post.title}</h2>
-                <p className='mb-2 text-gray-500'>{post.date}</p>
-                <p className='text-gray-500 text-xl'>{post.explanation}</p>
+        <div className='border border-slate-300 p-4 rounded-md shadow-sm'>
+            <Link href={`/posts/${props.slug}`} >
+                <p className='text-sm'>{props.date}</p>
+                <h2 className='text-2xl text-emerald-900 font-semibold hover:underline mb-4'>{props.title}</h2>
+                <p className='text-slate-700'>{props.explanation}</p>
             </Link>
         </div>
 
-    ))
-    return (
-        <>
-            <section className='mb-[200px] mt-[200px] p-11'>
-                <div className='mx-auto max-w-screen-xl bg-blue-50 pt-4 rounded-3xl pb-11'>
-                    <h1 className='text-4xl sm:text-6xl font-semibold mb-11 max-w-[900px] text-emerald-900 p-11'>From business problem to insightful solution</h1>
-                    <div className='flex flex-row gap-4 flex-wrap'>{postPreviews}</div>
-                </div>
-            </section >
-
-        </>
-    );
+    )
 
 }
+export default BlogPreview

@@ -4,8 +4,6 @@ import NavBar from '../Shared/NavBar';
 import HeroBanner from './hero';
 import Intro from './intro';
 import Services from './services';
-import WorkedWith from './workedWith';
-
 
 export default function Home(props) {
 
@@ -15,7 +13,6 @@ export default function Home(props) {
             <HeroBanner />
             <Intro />
             <Services />
-            <WorkedWith />
 
 
         </>
