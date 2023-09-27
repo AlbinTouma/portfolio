@@ -11,7 +11,7 @@ export function ServiceCard(props) {
     return (
 
         <>
-            <li className=' p-4 w-full gap-2 flex-col flex flex-wrap  bg-slate-50 rounded-xl shadow-sm'>
+            <li className='  w-full gap-2 flex-col flex flex-wrap border border-slate-300 p-4 rounded-md shadow-sm'>
                 <div className='flex flex-row gap-2 items-center'>
                     <div className='text-xl text-green-500'>{props.icon}</div>
                     <h1 className='text-xl'> {props.title}</h1>

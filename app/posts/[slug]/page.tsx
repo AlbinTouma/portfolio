@@ -16,12 +16,12 @@ const getPostContent = (slug: string) => {
 }
 
 
-export const generatedStaticParams = async () => {
+export const generateStaticParams = async () => {
     const posts = getPostMetaData();
     return posts.map((post) => ({
         slug: post.slug
     }));
-}
+};
 
 const BlogPage = (props: any) => {
     const slug = props.params.slug;
@@ -60,5 +60,5 @@ const BlogPage = (props: any) => {
 
 
 }
-export default BlogPage
+export default BlogPage;
 
