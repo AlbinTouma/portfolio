@@ -1,11 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    reactStrictMode: true,
-    distDir: 'out',
+    output: 'export',
     experimental: {
         mdxRs: true,
     },
 }
 
 const withMDX = require('@next/mdx')()
-module.exports = withMDX(nextConfig)
+
+module.exports = {
+    ...withMDX(nextConfig),
+    // Other Next.js configurations if needed
+
+}
