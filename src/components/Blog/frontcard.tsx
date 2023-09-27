@@ -18,12 +18,12 @@ export default function BlogPreview() {
     ))
     return (
         <>
-            <section className='bg-blue-50 mb-[200px] mt-[200px] p-11'>
-                <div className='mx-auto max-w-screen-xl '>
-                    <h1 className='text-4xl sm:text-6xl font-semibold mb-11 max-w-[900px] text-emerald-900'>From business problem to insightful solution</h1>
+            <section className='mb-[200px] mt-[200px] p-11'>
+                <div className='mx-auto max-w-screen-xl bg-blue-50 pt-4 rounded-3xl pb-11'>
+                    <h1 className='text-4xl sm:text-6xl font-semibold mb-11 max-w-[900px] text-emerald-900 p-11'>From business problem to insightful solution</h1>
                     <div className='flex flex-row gap-4 flex-wrap'>{postPreviews}</div>
                 </div>
-            </section>
+            </section >
 
         </>
     );

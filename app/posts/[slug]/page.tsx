@@ -12,12 +12,12 @@ const getPostContent = (slug: string) => {
     const file = `${folder}${slug}md`
     const content = fs.readFileSync(file, "utf8")
     const matterResult = matter(content);
-    return matterResult
+    return matterResult;
 }
 
 
 export const generatedStaticParams = async () => {
-    const posts = getPostMetaData()
+    const posts = getPostMetaData();
     return posts.map((post) => ({
         slug: post.slug
     }));
@@ -25,7 +25,7 @@ export const generatedStaticParams = async () => {
 
 const BlogPage = (props: any) => {
     const slug = props.params.slug;
-    const post = getPostContent(slug)
+    const post = getPostContent(slug);
     return (
         <>
             <header className='mb-[100px] mt-11 mr-11 flex justify-end'>
@@ -37,7 +37,9 @@ const BlogPage = (props: any) => {
                     </button>
                 </a>
             </header>
+
             <section className='max-w-[768px] mx-auto'>
+
                 <h1 className='text-5xl mb-11 text-emerald-900'>{post.data.title}</h1>
                 <Image src={post.data.image} width={768} height={500} alt='blog cover' className='mb-11' />
                 <article className='m-4 prose'>
