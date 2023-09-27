@@ -1,9 +1,7 @@
 import fs from 'fs';
-import Markdown from 'markdown-to-jsx'
 import matter from 'gray-matter'
 import getPostMetaData from '@/src/components/Blog/getPostMetadata';
 import { Image } from 'next/dist/client/image-component';
-import NavBar from '@/src/components/Shared/NavBar';
 import { FaArrowLeft } from 'react-icons/fa'
 import ReactMarkdown from 'react-markdown';
 
@@ -20,9 +18,9 @@ const getPostContent = (slug: string) => {
 
 export const generatedStaticParams = async () => {
     const posts = getPostMetaData()
-    return posts.map((post) => {
+    return posts.map((post) => ({
         slug: post.slug
-    });
+    }));
 }
 
 const BlogPage = (props: any) => {
